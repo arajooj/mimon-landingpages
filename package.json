@@ -2,15 +2,17 @@
   "name": "mimon-landingpages",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "start": "http-server src --port 8899",
-    "predeploy": "cp src/* dist/"
+    "predeploy": "node copy.js",
+    "deploy": "./deploy.sh",
+    "deploy-win": "deploy.bat"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "copy": "^0.3.2",
+    "copy-dir": "^1.3.0",
     "http-server": "^0.12.3"
   }
 }
