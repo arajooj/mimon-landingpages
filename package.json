@@ -1,0 +1,16 @@
+{
+  "name": "mimon-landingpages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server src --port 8899",
+    "predeploy": "cp src/* dist/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "copy": "^0.3.2",
+    "http-server": "^0.12.3"
+  }
+}
