@@ -1,0 +1,863 @@
+html {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/* navbar */
+.heading{
+    position: relative;
+}
+.navigation-menu {
+    width: 50px;
+    display: block;
+    height: 50px;
+    position: fixed;
+    top: 40px;
+    right: 6%;
+    z-index: 3;
+}
+
+.navbar-icon {
+    height: 3px;
+    background: #56e223;
+    width: 32px;
+    display: block;
+    margin: 5px;
+}
+.collapsed-menu {
+    width: 0;
+    position: fixed;
+    height: 100vh;
+    background-color: #1d232c;
+    top: 0;
+    right: 0;
+    transition: width 1s, opacity 1.5s;
+    z-index: 2;
+    opacity: 0;
+
+}
+
+.collapsed-menu .menu {
+    padding: 0 20px;
+}
+
+.collapsed-menu.show{
+    width: 100%;
+    padding: 0;
+    opacity: 1;
+    transition: width 1s, opacity 1.5s;
+}
+
+.menu{
+    margin: 40px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li a {
+    color: #fff;
+    padding: 7px 0;
+    display: block;
+    font-size: 18px;
+    min-width: 150px;
+}
+
+ .logo {
+    width: 45%;
+    height: 85px;
+    margin: 0;
+    padding: 30px 0 0 0;
+}
+
+
+ .logo img {
+    width: 100%;
+}
+/* Heading */
+
+.heading-featured {
+    background-image: url(../images/baby-touching-woman-s-face-small.jpg);
+    min-height: 521px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+/* texts */
+
+.title-section-header {
+    color: #fff;
+    margin-top: 185px;
+    font-weight: 400;
+    font-size: 31px;
+    padding: 0 0 0 0;
+}
+
+.title-section {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+.text-description {
+    font-size: 22px;
+    line-height: 23px;
+    margin-top: 10px;
+}
+
+/* Colors */
+
+.green-light{
+    color: #56e223
+}
+
+
+/* BOX products */
+.up-bg-margin {
+    margin-top: -75px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxed-products {
+    width: 160px;
+    height: 105px;
+    -webkit-box-shadow: 0px -1px 19px 2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px -1px 19px 2px rgba(0,0,0,0.16);
+    box-shadow: 0px -1px 19px 2px rgba(0,0,0,0.16);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 40px;
+}
+
+.boxed-products img {
+    overflow: hidden;
+    width: 50px;
+    margin-top: -4px;
+}
+
+.boxed-products p {
+    width: 100%;
+    text-align: center;
+    margin-top: -6px;
+    font-weight: 100;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.button-green {
+    background: #56e223;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 18px;
+    font-size: 11px;
+    border-radius: 32px;
+    margin-top: -7px;
+}
+
+
+.block-description {
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+    -webkit-box-shadow: 0px -1px 19px 2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px -1px 19px 2px rgba(0,0,0,0.16);
+    box-shadow: 0px -1px 19px 2px rgba(0,0,0,0.16);
+    justify-content: space-between;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.block-description img {
+    width: 41px;
+    margin: 0 0 0 17px;
+}
+.block-description .description {
+    width: 85%;
+    padding: 6px 10px 6px 16px;
+}
+.block-description .description h3 {
+    font-size: 18px;
+    margin: 6px 0 0 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.block-description .description p {
+    font-size: 13px;
+    color: #aeb4c3;
+    margin: 2px 0 6px 0;
+    max-width: 290px;
+}
+
+
+
+
+.comparacao img{
+    width: 80px;
+    margin: 30px auto 20px auto;
+    display: block
+}
+
+
+
+
+.comparacao .icons img{
+    width: 50px;
+    margin: 30px auto 20px auto;
+    display: block
+}
+
+.comparacao .icons p {
+    color: #aeb4c3;
+    font-size: 11px;
+}
+
+
+.funcionalidades{
+    padding: 50px 20px;
+}
+
+.boxes {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.funcionalidades .box-funcionalidade{
+    height: 100px;
+    width: 90%;
+    margin-left:5%; 
+    line-height: 17px;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(77,77,77,0.21);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(77,77,77,0.21);
+    box-shadow: 0px 0px 5px 0px rgba(77,77,77,0.21);   
+    font-size: 15px; 
+}
+
+.funcionalidades .box-funcionalidade .icon{
+    height: 25px;
+    margin: 0 0 15px 0;
+}
+
+/* TAXAS e PREÇOS */
+
+.precos-row-one {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.precos .box-preco{
+    width: 90%;
+    margin-left: 5%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(77,77,77,0.21);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(77,77,77,0.21);
+    box-shadow: 0px 0px 5px 0px rgba(77,77,77,0.21);   
+    font-size: 22px;
+    line-height: 25px; 
+    padding: 30px 20px 10px 20px;
+    text-align: center;
+}
+
+
+
+.precos .box-preco .price{
+    color: #56e223;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+
+.box-preco .cashback {
+    line-height: 0;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+/* Depoimentos */
+
+.depoimentos{
+    background-image: repeating-linear-gradient(13deg, #ffffff, #ffffff 200px, #56e223 0px, #56e223 600px);
+    background-repeat: no-repeat;
+    background-size: 100% 490px;
+    background-position: left top;
+    min-height: 430px;
+    padding-top: 50px;
+}
+.depoimentos .img-box{
+    align-content: center
+}
+
+.depoimentos .img-box img {
+    width: 110px;
+}
+
+.carousel {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.carousel-inner {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(77,77,77,0.21);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(77,77,77,0.21);
+    box-shadow: 0px 0px 5px 0px rgba(77,77,77,0.21);
+    border-radius: 0 0 10px 10px;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.carousel-indicators {
+    z-index: 1!important;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 13px;
+    background-color: #d1d5de;
+    border-radius: 36px;
+    border: 0;
+    margin-top: -28px;
+    opacity: 1;
+
+}
+
+.carousel-indicators .active {
+    background: #888f9e;
+}
+
+
+.item.carousel-item {
+    background: #fff;
+    padding: 30px;
+    padding-bottom: 70px;
+    min-height: 440px;
+}
+
+.item.carousel-item .title-infos p{
+    margin: 0;
+    padding: 0;
+}
+
+
+.exemplo-button {
+    position: absolute;
+    width: 100%;
+    background: #1d232c;
+    color: #fff;
+    margin-left: -30px;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+}
+
+
+/* FAQ */
+
+.card{
+    border: 0;
+    margin-top:20px; 
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(77,77,77,0.21);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(77,77,77,0.21);
+    box-shadow: 0px 0px 5px 0px rgba(77,77,77,0.21);
+    border-radius: 5px !important;
+    cursor: pointer;
+
+}
+
+.card-body{
+    color: #aeb4c3;
+}
+
+.card-link{
+    color: #1e242d;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+.text-duvidas {
+    width: 90%;
+    float: left;
+}
+
+.icon-duvidas {
+    float: right;
+    right: 0;
+}
+
+@media screen and (min-width: 900px) {
+    .heading-featured .logo {
+        width: 250px;
+        height: 85px;
+    }
+    .heading-featured {
+        background-image: url(../images/marry_1370×913.png);
+        min-height: 595px;
+        background-size: cover;
+        background-position: center top;
+    }
+    .boxed-desk {
+        width: 800px;
+    }
+    .carousel{
+        width: 440px;
+    }
+
+    .collapsed-menu.show {
+        width: 340px;
+    }
+
+    .block-description{
+        width: 510px;
+        margin: 0 auto;
+    }
+    .no-desk{
+        display: none;
+    }
+
+
+    .cashback-box {
+        width: 60%;
+        text-align: center;
+        margin: 60px auto;
+        padding: 50px 0;
+    }
+
+    .cashback-box a{
+        width: 100%;
+    }
+                        
+    .cashback-box a .box-preco{
+        height: 60px;
+    }
+
+   
+}
+
+/* Duvidas */
+
+.plataforma{
+    margin-top: 40px;
+}
+
+/* itens plataforma */
+.plataforma .box-item {
+    width: 95%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    height: 262px;
+}
+.plataforma .box-item img{
+    height: 40px;
+}
+.box-item-name{
+    color: #fff;
+    font-size: 20px;
+}
+
+.plataforma .box-item p{
+    font-size: 14px;
+}
+
+/* TITULOS */
+
+.text-gray-light{
+    color: #aeb4c3;
+}
+
+.titles-sections{
+    font-weight: bold;
+    line-height: 39px;
+    letter-spacing: 1px;
+
+}
+
+.titles-sections .no-style-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.size25{
+    font-size: 25px;
+}
+
+.size20{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* margins */
+
+.margin-top-20{
+    margin-top: 20px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.margin-both-20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.margin-left-20{
+    margin-left: 20px;
+    
+}
+.margin-right-20{
+    margin-right: 20px;
+    
+}
+.margin-sides-20{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* buttons */
+
+
+.button{
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    width: 100%;
+    display: block;
+    margin: 16px 0 0 0;
+    cursor: pointer;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+/* Color section */
+
+.color-section {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 30px;
+    margin: 30px 0;
+}
+
+
+.greenBG{
+    background: #56e223;
+}
+
+.darkgrayBG{
+    background: #1d232c;
+}
+
+
+/* FOOTER */
+.footer{
+    color: #c8c8c8;
+    font-size: 14px;
+    padding: 20px;
+
+}
+.footer ul{
+    margin: 0;
+    padding: 0 0;
+}
+.footer ul li{
+    padding: 5px;
+    list-style: none;
+    color: #c8c8c8;
+
+}
+.footer ul li a{
+    color: #c8c8c8;
+    cursor: pointer;
+}
+.footer p{
+    font-size: 11px;
+}
+
+.footer .social-media {
+    margin-top: 30px;
+
+}
+.footer .social-media li{
+    display: inline;
+    padding: 2px;
+}
+
+.footer .social-media li img{
+    width: 18%;
+    max-width: 50px;
+}
+/* SLIDER */
+
+.slick-slide {
+    margin: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    background: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.cashback-box a {
+    width: 100%;
+}
+
+.tel-number {
+    color: #ffffff;
+}
+
+.tel-number:hover {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.safe-box .highlight img {
+    width: 2%;
+    margin: 0 10px;
+}
+
+.safe-box .highlight {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .depoimentos {
+        background-image: repeating-linear-gradient(0deg, #ffffff, #ffffff 200px, #56e223 0px, #56e223 600px);
+        background-position: left 120px;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    .h3, h3 {
+        font-size: 1.65rem;
+    }
+    .depoimentos {
+        background-image: repeating-linear-gradient(13deg, #ffffff, #ffffff 100px, #56e223 0px, #56e223 500px);
+        background-repeat: no-repeat;
+        background-size: 100% 520px;
+        background-position: center top;
+    }
+    .precos .box-preco .price {
+        font-size: 34px;
+    }
+    .box-preco p {
+        font-size: 18px;
+    }
+    .safe-box .highlight img {
+        width: 6%;
+    }
+    .footer ul li {
+        font-size: 12px;
+    }
+}
+
+/* Ajustes para galaxy S5 */
+@media screen and (max-width: 360px) {
+    .up-bg-margin {
+        margin-top: -35px;
+    }
+    .box-funcionalidade p {
+        font-size: 12px;
+    }
+} 
+
+/* Ajustes para Iphone 5S */
+@media screen and (max-width: 360px) {
+    .boxed-products {
+        width: 140px;
+    }
+    .precos .box-preco .price {
+        font-size: 28px;
+    }
+    .box-preco p {
+        font-size: 16px;
+    }
+}
+
+/* Overflow hidden no mobile e ipad */ 
+
+@media screen and (max-width: 900px) {
+    .overflow-change {
+        overflow: hidden;
+    }
+}
+
+/* Ajustes para Ipad modo de pé */
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    .logo img {
+        width: 70%;
+    }
+    .heading-featured {
+        background-image: url(../images/baby-touching-woman-s-face-1257110.jpg);
+        min-height: 700px;
+        background-position: center center;
+    }
+    .title-section-header {
+        margin-top: 345px;
+    }
+}
+
+/* Safari 11+ */
+
+@media not all and (min-resolution:.001dpcm){ 
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+        .boxed-products img {
+            margin-top:-40px;
+        }
+        .boxed-products p {
+            margin-top:-46px;
+        }
+        .button-green {
+            margin-top:-17px;
+        }
+    }
+}
